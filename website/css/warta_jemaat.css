@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4a261;
+    padding: 30px 20px;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan isi sidebar */
+}
+
+.sidebar-logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e76f51;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan konten utama */
+}
+
+.content {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #264653;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #f4a261;
+}
+
+.birthday-section {
+    background-color: #e76f51;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.birthday-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.birthday-filters select {
+    padding: 10px;
+    margin: 5px;
+    width: 45%;
+}
+
+.schedule {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.day {
+    background-color: #e9e9e9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}

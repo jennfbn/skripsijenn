@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4a261;
+    padding: 30px 20px;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan isi sidebar */
+}
+
+.sidebar-logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e76f51;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan konten utama */
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #264653;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #f4a261;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Pusatkan dashboard */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    background-color: #f4a261;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-birthday {
+    background-color: #f4a261;
+    margin-top: 50px;
+    gap: 20px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .card-birthday:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2, .card-birthday h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #264653;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-birthday {
+    grid-column: span 2;
+    background-color: #e76f51;
+}
+
+.card-birthday h2 {
+    font-size: 20px;
+}
+
+.birthday-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Mengatur jarak antar elemen */
+    flex-wrap: wrap;
+    padding: 20px; /* Menambahkan padding di dalam kolom merah */
+}
+
+
+.birthday-list input {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.birthday-list input:focus {
+    outline: none;
+    border-color: #e76f51;
+    box-shadow: 0 0 8px rgba(231, 111, 81, 0.2);
+}
